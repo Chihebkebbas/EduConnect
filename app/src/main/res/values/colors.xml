@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="indigo">#5A74DA</color>
+    <color name="zircon">#F6F8FE</color>
+    <color name="ghost_white">#F7FCFF</color>
+    <color name="gray">#ABABAB</color>
+    <color name="subtitle">#000000</color>
+    <color name="red">#DA5A5A</color>
+    <color name="green">#00B569</color>
+
+</resources>

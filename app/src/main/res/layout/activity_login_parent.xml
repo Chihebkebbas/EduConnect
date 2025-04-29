@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="@color/zircon">
+
+    <!-- Logo -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:padding="70dp"
+        android:layout_gravity="center"/>
+
+    <!-- Welcome, continue as a parent ! -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="70dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome, continue"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/carmen_sans_bold"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="as a "
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/carmen_sans_bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="parent "
+                android:textSize="30dp"
+                android:textColor="@color/indigo"
+                android:fontFamily="@font/carmen_sans_bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="!"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/carmen_sans_bold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Email (Text and box) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/carmen_sans_light"
+        android:layout_gravity="left"
+        tools:ignore="RtlHardcoded" />
+    <EditText
+        android:id="@+id/email_parent"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="7dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:background="@drawable/login_edit_text"
+        android:inputType="textEmailAddress"/>
+
+    <!-- Password (Text and box) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/password"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/carmen_sans_light"
+        android:layout_gravity="left"
+        tools:ignore="RtlHardcoded" />
+    <EditText
+        android:id="@+id/password_parent"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="7dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:background="@drawable/login_edit_text"
+        android:inputType="textPassword"/>
+
+    <!-- Sign in button -->
+    <Button
+        android:id="@+id/button_login_parent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="80dp"
+        android:background="@color/indigo"
+        android:text="@string/sign_in"
+        android:textSize="26sp"
+        android:letterSpacing="0.02"
+        android:textColor="@color/zircon"
+        android:fontFamily="@font/carmen_sans_bold"/>
+
+    <!-- login us as a teacher -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="left">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Are you a teacher ? "
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/carmen_sans_regular"/>
+        <TextView
+            android:id="@+id/link_login_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="login"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/carmen_sans_bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>

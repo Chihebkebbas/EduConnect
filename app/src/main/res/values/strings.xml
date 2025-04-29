@@ -1,0 +1,146 @@
+<resources>
+    <string name="app_name">EduConnect</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="sign_in">Sign in</string>
+    <string name="my_sons">My sons</string>
+    <string name="high_school_student">High School Student</string>
+    <string name="recent">Recent</string>
+    <string name="feed">Feed</string>
+    <string name="school">School</string>
+    <string name="year">year</string>
+    <string name="type">type</string>
+    <string name="date_publication1">feb 16, 2024</string>
+    <string name="date_publication2">Jan 10, 2024</string>
+    <string name="id">ID :</string>
+    <string name="scientific">Scientific</string>
+    <string name="section">Section :</string>
+    <string name="level">Level :</string>
+    <string name="registration_n">Registration N° :</string>
+    <string name="school_year">School year :</string>
+    <string name="print">Print</string>
+    <string name="grades">Grades</string>
+    <string name="grades_subtitile">discover latest exams grades and more ..</string>
+    <string name="absences">Absences</string>
+    <string name="abscences_subtitle">Track your son\'s abscences, and justify them</string>
+    <string name="remark">Remark</string>
+    <string name="summon">Summon</string>
+    <string name="notifications">Notifications</string>
+    <string name="notification_item_title_new_post">New Post</string>
+    <string name="title_activity_notification">NotificationActivity</string>
+    <string name="notification_title">Notification Title</string>
+    <string name="notification_description">Notification Description</string>
+    <string name="notification_date">Notification Date</string>
+    <string name="notification_time">Notification Time</string>
+    <string name="trimestre">trimestre</string>
+    <string name="_2023_q1">2023, Q1</string>
+    <string name="overall_grade">Overall grade :</string>
+    <string name="module">Module</string>
+
+
+    <string name="first_fragment_label">HomeFragment</string>
+    <string name="second_fragment_label">SecondFragment</string>
+    <string name="coef">Coef</string>
+    <string name="grade">Grade</string>
+    <string name="module_miniscule">module</string>
+
+
+    <!--Remark card 1-->
+    <string name="remark1_module">Environmental Science</string>
+    <string name="remark1_teacher">Ms. Rebecca Thompson</string>
+    <string name="remark1_date">mar 02, 2023</string>
+    <string name="remark1_time">11:00 am</string>
+    <string name="remark1">Your Daughter consistently demonstrates a strong work ethic and dedication to their studies.</string>
+
+    <!--Remark card 2-->
+    <string name="remark2_module">Physics</string>
+    <string name="remark2_teacher">Mr. Stephan Maccan</string>
+    <string name="remark2_date">jan 13, 2023</string>
+    <string name="remark2_time">01:00 pm</string>
+    <string name="remark2">Your daughter consistently demonstrates a positive attitude towards learning and interacts
+                            well with their peers. Keep up the great work!</string>
+
+
+    <!--Notification Arrays-->
+    <string-array name="notification_item_title">
+        <item>New Post</item>
+        <item>New summon</item>
+        <item>New remark</item>
+    </string-array>
+    <string-array name="notification_item_description">
+        <item>Pinecrest High School has publiched new post</item>
+        <item>Ms. Rebecca sent you a summon</item>
+        <item>Mr. Stephan sent you a new remark</item>
+    </string-array>
+    <string-array name="notification_item_date">
+        <item>Feb 16, 2024</item>
+        <item>nov 11, 2023</item>
+        <item>jan 13, 2023</item>
+    </string-array>
+    <string-array name="notification_item_time">
+        <item>02:30 pm</item>
+        <item>09:00 pm</item>
+        <item>01:00 pm</item>
+    </string-array>
+
+
+    <!--Grades Page - Modules-->
+    <string-array name="module_title">
+        <item>Mathematics</item>
+        <item>English Language</item>
+        <item>Environmental Science</item>
+        <item>History</item>
+        <item>Visual Arts</item>
+        <item>Computer Science</item>
+        <item>Health Education</item>
+        <item>Geography</item>
+    </string-array>
+    <string-array name="module_coef">
+        <item>7</item>
+        <item>3</item>
+        <item>4</item>
+        <item>2</item>
+        <item>2</item>
+        <item>5</item>
+        <item>2</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="module_grade">
+        <item>16.23</item>
+        <item>12.03</item>
+        <item>14.89</item>
+        <item>10.53</item>
+        <item>18.07</item>
+        <item>12.87</item>
+        <item>12.67</item>
+        <item>9.76</item>
+    </string-array>
+
+
+    <!--Summon Card-->
+    <string name="summon_module">Environmental Science</string>
+    <string name="summon_teacher">Ms. Rebecca Thompson</string>
+    <string name="summon_date">nov 11, 2023</string>
+    <string name="summon_time">09:00 am</string>
+    <string name="summon_content">Please come to the high school within this week regarding
+                                  a matter concerning your son.</string>
+    
+    
+    <string name="not_justified">not justified</string>
+    <string name="justify_now">Justify Now</string>
+    <string name="justified">Justified</string>
+    
+    <!--Absence Card - non justified-->
+    <string name="non_justified_type">Absence</string>
+    <string name="non_justified_date">nov 11, 2023</string>
+    <string name="non_justified_time">03:30 pm</string>
+
+    <!--Absence Card - justified-->
+    <string name="justified_type">Absence</string>
+    <string name="justified_date_from">oct 10, 2023</string>
+    <string name="justified_time_from">09:00 am  </string>
+    <string name="justified_date_to">oct 13, 2023</string>
+    <string name="justified_time_to">08:30 am</string>
+    <string name="justified_justification">Sick holiday.</string>
+
+</resources>

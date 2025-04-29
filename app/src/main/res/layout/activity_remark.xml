@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RemarkActivity"
+    android:background="@color/zircon">
+
+    <!-- Tool Bar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/indigo"
+        app:contentInsetStart="0dp"
+        android:layout_marginBottom="18dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:gravity="center_vertical">
+
+            <!--Back Icon-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/remark_back_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_back"
+                android:scaleType="centerCrop"/>
+
+            <!--Remark- title-->
+            <TextView
+                android:id="@+id/remark_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/remark"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:fontFamily="@font/carmen_sans_semibold"
+                android:gravity="center"/>
+
+            <!--Parent avatar-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/parent_avatar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/sophia_photo"
+                android:scaleType="centerCrop"/>
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Filter and Sort -->
+    <HorizontalScrollView
+        android:id="@+id/filter_remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_marginBottom="18dp">
+
+        <!--Layout des cards de filtre-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp">
+
+            <!--first card de filter (recent)-->
+            <TextView
+                android:id="@+id/filter_remark_recent"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:background="@color/indigo"
+                android:text="@string/recent"
+                android:textSize="15sp"
+                android:textColor="@color/zircon"
+                android:fontFamily="@font/carmen_sans_medium"
+                android:gravity="center"
+                android:layout_marginEnd="20dp"/>
+
+
+            <!--filter Modulle card  (text and icon)-->
+            <LinearLayout
+                android:id="@+id/filter_remark_module"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:paddingEnd="12dp"
+                android:paddingStart="15dp"
+                android:orientation="horizontal"
+                android:background="@drawable/filter_unselected_card"
+                android:gravity="center"
+                android:layout_marginEnd="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/module_miniscule"
+                    android:textSize="15sp"
+                    android:textColor="@color/indigo"
+                    android:fontFamily="@font/carmen_sans_medium"
+                    android:gravity="center"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_filter"/>
+
+            </LinearLayout>
+
+            <!--filter year card  (text and icon)-->
+            <LinearLayout
+                android:id="@+id/filter_remark_year"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:paddingEnd="12dp"
+                android:paddingStart="15dp"
+                android:orientation="horizontal"
+                android:background="@drawable/filter_unselected_card"
+                android:gravity="center"
+                android:layout_marginEnd="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/year"
+                    android:textSize="15sp"
+                    android:textColor="@color/indigo"
+                    android:fontFamily="@font/carmen_sans_medium"
+                    android:gravity="center"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_filter"/>
+
+            </LinearLayout>
+
+            <!--filter trimestre card  (text and icon)-->
+            <LinearLayout
+                android:id="@+id/filter_remark_trimestre"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/filter_unselected_card"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="15dp"
+                android:paddingEnd="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/carmen_sans_medium"
+                    android:gravity="center"
+                    android:text="@string/trimestre"
+                    android:textColor="@color/indigo"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_filter"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <!--Trimsetre and year-->
+    <TextView
+        android:id="@+id/remark_year_trimestre"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/_2023_q1"
+        android:textSize="12sp"
+        android:textColor="@color/subtitle"
+        android:fontFamily="@font/carmen_sans_regular"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/remark_recycler_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+
+</LinearLayout>

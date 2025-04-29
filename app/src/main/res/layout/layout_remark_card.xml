@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/grades_card">
+
+    <!--First Line (Module and Teacher, Date and Time)-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!--Module and teacher-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!--Module-->
+            <TextView
+                android:id="@+id/remark_module"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/carmen_sans_semibold"/>
+
+            <!--Teacher-->
+            <TextView
+                android:id="@+id/remark_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/subtitle"/>
+
+        </LinearLayout>
+
+        <!--Date and Time-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="end">
+
+            <!--Module-->
+            <TextView
+                android:id="@+id/remark_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/indigo"
+                android:fontFamily="@font/carmen_sans_bold"/>
+
+            <!--Teacher-->
+            <TextView
+                android:id="@+id/remark_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/subtitle"
+                android:fontFamily="@font/carmen_sans_regular"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--Title-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/remark"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:textColor="@color/indigo"
+        android:fontFamily="@font/carmen_sans_semibold"/>
+
+    <!--Remark-->
+    <TextView
+        android:id="@+id/remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="4dp"
+        android:layout_marginTop="13dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/carmen_sans_regular"/>
+    
+</LinearLayout>

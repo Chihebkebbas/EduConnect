@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+    android:background="@drawable/nonjustified_card"
+    android:layout_marginBottom="18dp"
+    android:padding="20dp">
+
+    <!--Type and from-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <!--Type of absence-->
+        <TextView
+            android:id="@+id/nonjustified_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/carmen_sans_semibold"
+            android:layout_gravity="top"/>
+
+        <!--Date and time of absence-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <!--from :-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="from: "
+                android:textSize="12sp"
+                android:fontFamily="@font/carmen_sans_bold"/>
+
+            <!--date-->
+            <TextView
+                android:id="@+id/nonjustified_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:fontFamily="@font/carmen_sans_regular"/>
+
+            <!--at: -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  at: "
+                android:textSize="12sp"
+                android:fontFamily="@font/carmen_sans_bold"/>
+
+            <!--to-->
+            <TextView
+                android:id="@+id/nonjustified_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:fontFamily="@font/carmen_sans_regular"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--Right column-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="end"
+        android:orientation="vertical">
+
+        <!--Not justified-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/not_justified"
+            android:textAllCaps="true"
+            android:textSize="14sp"
+            android:textColor="@color/red"
+            android:fontFamily="@font/carmen_sans_bold"/>
+
+        <!--date-->
+        <TextView
+            android:id="@+id/nonjustified_date2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:textColor="@color/gray"
+            android:fontFamily="@font/carmen_sans_regular"/>
+
+        <!--Justify now button-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nonjustified_card"
+            android:fontFamily="@font/carmen_sans_bold"
+            android:paddingStart="18dp"
+            android:paddingTop="7dp"
+            android:paddingEnd="18dp"
+            android:paddingBottom="7dp"
+            android:text="@string/justify_now"
+            android:textColor="@color/red"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

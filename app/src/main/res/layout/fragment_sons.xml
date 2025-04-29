@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/zircon"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    tools:context=".SonsFragment">
+
+    <!-- Tool Bar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        app:contentInsetStart="0dp"
+        android:layout_marginBottom="25dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_horizontal"
+            android:layout_gravity="start"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/parent_avatar"
+            android:layout_gravity="end"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Student Information -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/card_student"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
+
+        <!-- Avatar -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/sophia_photo"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- Student Name -->
+        <TextView
+            android:id="@+id/student1_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sophia Reynolds"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/carmen_sans_bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Horizontal layout contient le reste des infos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="15dp">
+
+            <!-- information des column 1 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <!-- Id -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/id"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/carmen_sans_semibold"
+                    android:layout_marginBottom="4dp"/>
+                <TextView
+                    android:id="@+id/student1_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2024350136868"
+                    android:textSize="12sp"
+                    android:textColor="#CC000000"
+                    android:fontFamily="@font/carmen_sans_regular"
+                    android:layout_marginBottom="8dp"/>
+
+                <!-- Level -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/carmen_sans_semibold"
+                    android:layout_marginBottom="4dp"/>
+                <TextView
+                    android:id="@+id/student1_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/high_school_student"
+                    android:textSize="12sp"
+                    android:textColor="#CC000000"
+                    android:fontFamily="@font/carmen_sans_regular"
+                    android:layout_marginBottom="8dp"/>
+
+                <!-- Section -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/section"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/carmen_sans_semibold"
+                    android:layout_marginBottom="4dp"/>
+                <TextView
+                    android:id="@+id/student1_section"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/scientific"
+                    android:textSize="12sp"
+                    android:textColor="#CC000000"
+                    android:fontFamily="@font/carmen_sans_regular"/>
+
+            </LinearLayout>
+
+            <!-- information des column 2 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <!-- Registration N° : -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/registration_n"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/carmen_sans_semibold"
+                    android:layout_marginBottom="4dp"/>
+                <TextView
+                    android:id="@+id/student1_registeration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00000785"
+                    android:textSize="12sp"
+                    android:textColor="#CC000000"
+                    android:fontFamily="@font/carmen_sans_regular"
+                    android:layout_marginBottom="8dp"/>
+
+                <!-- School year : -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/school_year"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/carmen_sans_semibold"
+                    android:layout_marginBottom="4dp"/>
+                <TextView
+                    android:id="@+id/student1_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2023/2024"
+                    android:textSize="12sp"
+                    android:textColor="#CC000000"
+                    android:fontFamily="@font/carmen_sans_regular"
+                    android:layout_marginBottom="8dp"/>
+
+                <!-- Print Button -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/filter_unselected_card"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <!--Print text-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/print"
+                        android:textSize="12sp"
+                        android:textColor="@color/indigo"
+                        android:letterSpacing="0.02"
+                        android:fontFamily="@font/carmen_sans_medium"/>
+
+                    <!--Print icon-->
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_print"
+                        android:layout_marginLeft="4dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <!--Cards, I'm using linear layouts instead of card view, cuz card view don't
+    support attribute like stroke and backgrounds from drawable-->
+
+    <!--Grades Card-->
+    <LinearLayout
+        android:id="@+id/grades_card"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="18dp"
+        android:layout_weight="1"
+        android:background="@drawable/cardes"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="25dp"
+        android:paddingTop="15dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="15dp">
+
+        <!--Grades Title and Subtitle Layout-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:fontFamily="@font/carmen_sans_semibold"
+                android:text="@string/grades"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/carmen_sans_regular"
+                android:text="@string/grades_subtitile"
+                android:textColor="@color/subtitle"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Grades Icon -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="-5dp"
+            android:src="@drawable/icon_grades" />
+
+    </LinearLayout>
+
+    <!--Remark Card & Summon Card-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_marginBottom="18dp">
+
+        <!--Remark Card-->
+        <LinearLayout
+            android:id="@+id/remark_card"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/cardes"
+            android:gravity="center"
+            android:layout_marginRight="9dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_remark"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/remark"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/carmen_sans_semibold"/>
+
+        </LinearLayout>
+
+        <!--Summon Card-->
+        <LinearLayout
+            android:id="@+id/summon_card"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/cardes"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_summon"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/summon"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/carmen_sans_semibold"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <!--Absences Card-->
+    <LinearLayout
+        android:id="@+id/absence_card"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/cardes"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_marginBottom="18dp">
+
+        <!--Grades Title and Subtitle Layout-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/absences"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/carmen_sans_semibold"
+                android:layout_marginBottom="6dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/abscences_subtitle"
+                android:textSize="14sp"
+                android:textColor="@color/subtitle"
+                android:fontFamily="@font/carmen_sans_regular"
+                android:layout_marginBottom="8dp"/>
+
+        </LinearLayout>
+
+        <!-- Grades Icon -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_abscence"
+            android:paddingLeft="30dp"
+            android:paddingRight="-5dp"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

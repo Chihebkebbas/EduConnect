@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notification_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="9dp"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+
+
+    <!--Notification Item-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!--Notification item icon-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/notification_item_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:scaleType="centerCrop"/>
+
+        <!--Notification info-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <!--Notification item title-->
+            <TextView
+                android:id="@+id/notification_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/notification_title"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/carmen_sans_semibold"
+                android:letterSpacing="0.03"/>
+
+            <!--Notification item subtitle-->
+            <TextView
+                android:id="@+id/notification_item_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/notification_description"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/carmen_sans_light"
+                android:letterSpacing="0.03"/>
+
+            <!--date & time-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <!--Date-->
+                <TextView
+                    android:id="@+id/notification_item_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/notification_date"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray"
+                    android:layout_marginEnd="10dp"
+                    android:paddingStart="1dp"/>
+
+                <!--Time-->
+                <TextView
+                    android:id="@+id/notification_item_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/notification_time"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--Notification Separation-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_marginStart="61dp"/>
+
+</LinearLayout>
